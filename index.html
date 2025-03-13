@@ -4,19 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя 3D модель</title>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <link rel="stylesheet" href="styles.css"> <!-- Если у вас есть CSS файл -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
 <body>
-    <model-viewer 
-        src="https://raw.githubusercontent.com/TsupaAnja/Toothless/main/Беззубик.glb"
-        ios-src="https://raw.githubusercontent.com/TsupaAnja/Toothless/main/Беззубик_2.usdz" 
-        alt="Описание модели" 
-        auto-rotate 
-        camera-controls 
-        ar
-        xr-environment
-        style="width: 100%; height: 100vh;">
-    </model-viewer>
+    <model-viewer id="model-viewer" src="Беззубик.glb" ios-src="Беззубик_2.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" alt="A 3D model of an astronaut" shadow-intensity="2" auto-rotate disable-pan skybox-height="2m" max-camera-orbit="auto 90deg auto">
+      </model-viewer>
 </body>
 </html>
